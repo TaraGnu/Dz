@@ -10,7 +10,10 @@
         <p>Честно я незнаю что о себе можно написать тут</p>
     </div>
     <div class="row">
-        <button class="btn">
+        <button class="btn-1 btn">
+            кнопочка
+        </button>
+        <button class="btn-2 btn">
             кнопочка
         </button>
     </div>
@@ -35,23 +38,43 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     text-align: center;
 }
-
+.row{
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    align-content: space-between;
+}
 .btn{
-    margin-left: 30vh;
     height: 5rem;
     border-radius: 20px;
     border-width: 0px;
     width: 10rem;
     font-size: 24px;
     color: white;
-    background-color: rgb(209, 23, 23);
     box-shadow: rgb(23, 3, 31);
 }
-.btn:hover{
+.btn-1{
+    background-color: rgb(209, 23, 23);
+}
+
+.btn-2{
+    background-color: rgb(29, 46, 201);
+}
+.btn-1:hover{
     margin-top: -2px;
     background-color: rgb(204, 63, 58);
 }
-.btn:active{
+
+.btn-1:active{
+    margin-top: 2px;
     background-color: rgb(92, 33, 33);
+}
+.btn-2:hover{
+    margin-top: -2px;
+    background-color: rgb(58, 85, 204);
+}
+.btn-2:active{
+    margin-top: 2px;
+    background-color: rgb(27, 35, 102);
 }
 </style>
